@@ -5,9 +5,10 @@
   <title>How AngularJS Works?</title>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.js"></script>
 </head>
-<body>
+<body ng-init="numOfBooks = 10">
 
-  <p>Welcome to BooKart, we have collection of {{1 + ' Million'}} books.</p>
+  Number of Books: <input ng-model="numOfBooks" />
+  <p>Welcome to BooKart, we have collection of {{numOfBooks + ' Million'}} books.</p>
   <date-picker></date-picker>
   <div class="date-picker"></div>
 </body>
